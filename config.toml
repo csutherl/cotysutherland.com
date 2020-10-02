@@ -1,4 +1,4 @@
-baseurl = "//cotysutherland.com"
+baseurl = "//coty-sutherland.netlify.app"
 title = "Coty Sutherland"
 
 theme = "hugo-coder"
@@ -90,7 +90,7 @@ googleAnalytics = "UA-100325743-1"
     name = "RSS"
     icon = "fas fa-rss"
     weight = 5
-    url = "https://cotysutherland.com/index.xml"
+    url = "/index.xml"
     rel = "alternate"
     type = "application/rss+xml"
 
