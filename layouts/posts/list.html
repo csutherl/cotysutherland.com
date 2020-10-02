@@ -1,0 +1,24 @@
+{{ define "title" }}
+  {{ title (i18n (lower .Title)) | default .Title }} · {{ .Site.Title }}
+{{ end }}
+{{ define "content" }}
+	<section class="container list">
+		<h1 class="title">{{ .Title }}</h1>
+		{{ .Content }}
+		{{- range .Data.Pages.GroupByDate "2006" }}
+		<div class="posts-group">
+			<div class="post-year" id="{{ .Key }}">{{ .Key }}</div>
+			<ul class="posts-list">
+				{{- range .Pages }}
+				<li class="post-item">
+					<a class="title" href="{{.Permalink}}">
+						<span class="post-title">{{.Title}}</span>
+						<span class="post-day">{{ .Date.Format .Site.Params.dateformShort }}</span>
+					</a>
+				</li>
+				{{- end }}
+			</ul>
+		</div>
+		{{- end }}
+	</section>
+{{ end }}

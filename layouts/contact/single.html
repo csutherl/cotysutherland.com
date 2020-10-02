@@ -1,0 +1,85 @@
+{{ define "title" }}
+  {{ .Title }} · {{ .Site.Title }}
+{{ end }}
+{{ define "content" }}
+<style>
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
+
+ /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+</style>
+
+<section class="container page">
+  <article>
+    <header>
+      <h1>{{ .Title }}</h1>
+    </header>
+
+    <div class="row">
+      <div class="column">
+        <form action="https://formspree.io/f/xqkgagjp" method="POST">
+          <label>Name:</label>
+          <input type="text" name="name" placeholder="John Doe">
+          <br>
+          <label>Email:</label>
+          <input type="text" name="_replyto" placeholder="johndoe@example.com">
+          <br>
+          <label>Message:</label>
+          <textarea name="message"></textarea>
+          <br>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    
+      <div class="column" style="margin-left: 2em">
+        {{ .Content }}
+        <section class="container centered">
+          <div class="about">
+            {{ with .Site.Params.social }}
+            <ul>
+              {{ range sort . "weight" }}
+                {{ if and (.icon) (ne .name "RSS") }}
+                  <li>
+                    <a href="{{ .url }}" aria-label="{{ .name }}" {{ if .rel }}rel="{{ .rel }}"{{ end }} {{ if .target }}target="{{ .target }}"{{ end }} {{ if .type }}type="{{ .type }}"{{ end }}>
+                      <i class="{{ .icon }}" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                {{ else if (eq .name "RSS") }}
+                {{ else }}
+                  <li>
+                    <a href="{{ .url }}" aria-label="{{ .name }}" {{ if .rel }}rel="{{ .rel }}"{{ end }} {{ if .target }}target="{{ .target }}"{{ end }}>{{ .name }}</a>
+                  </li>
+                {{ end }}
+              {{ end }}
+            </ul>
+            {{ end }}
+          </div>
+        </section>
+      </div>
+    </div>
+  </article>
+</section>
+{{ end }}
