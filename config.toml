@@ -68,27 +68,27 @@ googleAnalytics = "UA-100325743-1"
 
 [[params.social]]
     name = "Github"
-    icon = "fab fa-github"
+    icon = "fa fa-github"
     weight = 1
     url = "https://github.com/csutherl/"
 [[params.social]]
     name = "Twitter"
-    icon = "fab fa-twitter"
+    icon = "fa fa-twitter"
     weight = 2
     url = "https://twitter.com/cotysutherland/"
 [[params.social]]
     name = "LinkedIn"
-    icon = "fab fa-linkedin"
+    icon = "fa fa-linkedin"
     weight = 3
     url = "https://www.linkedin.com/in/cotysutherland/"
 [[params.social]]
     name = "Instagram"
-    icon = "fab fa-instagram"
+    icon = "fa fa-instagram"
     weight = 4
     url = "https://instagram.com/codeblue417/"
 [[params.social]]
     name = "RSS"
-    icon = "fas fa-rss"
+    icon = "fa fa-rss"
     weight = 5
     url = "/index.xml"
     rel = "alternate"
