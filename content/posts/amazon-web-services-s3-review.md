@@ -24,7 +24,7 @@ You have two options for encrypting data that is stored in S3, you can choose to
 
 ### Replication of buckets/data sets for multiple purposes. Short term vs long term environments. How long does it take to create replica sets?
 
-I haven’t been able to find any documentation on this subject just yet, but am working on a few test cases. I am going to use an AWS public set to get some performance benchmarks. I am documenting this experiment here: [S3 and the Million Song Dataset Experiment](https://cotysutherland.com/2014/02/17/s3-million-song-dataset-experiment/).
+I haven’t been able to find any documentation on this subject just yet, but am working on a few test cases. I am going to use an AWS public set to get some performance benchmarks. I am documenting this experiment here: [S3 and the Million Song Dataset Experiment](/posts/s3-and-the-million-song-dataset-experiment/).
 
 ### Security options around S3 buckets
 
@@ -42,5 +42,5 @@ For more information on access control, please visit the documentation [here](ht
 
 As far as performance configuration/settings go with S3, I did not see a whole lot. It is a pretty simple interface for getting connected to and using. I did find an article [here](http://aws.typepad.com/aws/2012/03/amazon-s3-performance-tips-tricks-seattle-hiring-event.html) that talks about partitioning strategies for data when putting it into S3, which was interesting. There is another interesting article on S3 read performance [here](http://engineering.gnip.com/s3-read-performance/).
 
-I can say that I had some experience copying data into and around within S3 and had no trouble at all. I put in over 100G of log data, which took a good hunk of time (documented in the S3 copying post [here](https://cotysutherland.com/2014/02/20/emr-experimentation-web-logs/)) but had no evidence of resource contention. I also tested an EMR Pig job with reading from a single 10G file with no apparent problems. The tests were performed with 3, 6, 11, and 20 nodes without issue.
+I can say that I had some experience copying data into and around within S3 and had no trouble at all. I put in over 100G of log data, which took a good hunk of time (documented in the S3 copying post [here](/posts/amazon-emr-experimentation-with-web-logs/)) but had no evidence of resource contention. I also tested an EMR Pig job with reading from a single 10G file with no apparent problems. The tests were performed with 3, 6, 11, and 20 nodes without issue.
 

@@ -12,7 +12,7 @@ title = "JBoss Data Virtualization 6 Implementation Notes"
 
 ### Purpose
 
-I am writing this post to document some notes about my experience while developing a virtual database on JBoss Data Virtualization 6. This post is a collection of notes that expand on my experience documented in [this](https://cotysutherland.com/2014/02/19/data-virtualization-jboss/) post. These are some things broken apart into sections that I thought were noteworthy.
+I am writing this post to document some notes about my experience while developing a virtual database on JBoss Data Virtualization 6. This post is a collection of notes that expand on my experience documented in [this](/posts/data-virtualization-with-jboss/) post. These are some things broken apart into sections that I thought were noteworthy.
 
 ### My Environment
 
@@ -25,7 +25,7 @@ I am writing this post to document some notes about my experience while developi
 
 ### Caching
 
-* General notes on Data Virtualization server caching are [here](https://cotysutherland.com/2014/02/19/data-virtualization-cache-notes/)
+* General notes on Data Virtualization server caching are [here](/posts/data-virtualization-cache-notes/)
 * Flat files are pretty slow and should typically be cached to work with. You can do this by making the view a materialized view. In the view table editor settings, set Materialized to True, leave the Materialized Table setting blank. Also add a cache TTL to the view’s transformation SQL. An example of this is to add the following line to the top of your SQL transformation “/*+ cache(ttl:3600000) */”. Doing this increased the performance of a ‘select count(*) from $FILE_SRC’ query from 950 seconds to just 0.09 seconds after caching.
 * Applying the same technique to the complete joined view, we go from 400 seconds to less than 1 second.
 * According to the doc [here](https://developer.jboss.org/wiki/AHowToGuideForMaterializationcachingViewsInTeiid), Teiid only supports two options for refreshing.
