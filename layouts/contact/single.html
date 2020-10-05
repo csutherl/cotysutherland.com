@@ -3,15 +3,7 @@
 {{ end }}
 {{ define "content" }}
 <style>
-.row {
-  display: flex;
-}
-
-.column {
-  flex: 50%;
-}
-
- /* Style inputs with type="text", select elements and textareas */
+/* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
   width: 100%; /* Full width */
   padding: 12px; /* Some padding */ 
@@ -38,8 +30,8 @@ input[type=submit] {
       <h1>{{ .Title }}</h1>
     </header>
 
-    <div class="row">
-      <div class="column">
+    <div class="row" style="display: flex">
+      <div class="column" style="flex: 50%">
         <form action="https://formspree.io/f/xqkgagjp" method="POST">
           <label>Name:</label>
           <input type="text" name="name" placeholder="John Doe">
@@ -54,7 +46,7 @@ input[type=submit] {
         </form>
       </div>
     
-      <div class="column" style="margin-left: 2em">
+      <div class="column" style="flex: 50%;margin-left: 2em">
         {{ .Content }}
         <section class="container centered">
           <div class="about">

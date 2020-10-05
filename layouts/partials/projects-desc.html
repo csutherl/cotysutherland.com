@@ -1,0 +1,8 @@
+<h5 style="margin: 0">{{ .title }}</h5>
+<p>{{ .description }}</p>
+{{ with .website_link }}
+<a href="{{ . }}" _target="blank" class="btn"><i class="fa fa-link"></i> Visit Project</a>
+{{ end }}
+{{ with .sources_link }}
+<a href="{{ . }}" _target="blank" style="margin-left: 1em"><i class="fa fa-code"></i> Visit Source</a>
+{{ end }}
