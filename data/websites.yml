@@ -1,0 +1,19 @@
+name: Websites
+source:
+  - title: Jacobs for Board of Education 
+    image: /images/pyj.com.png
+    description: I created a website using Hugo for the Pamela Young-Jacobs for Columbus County Board of Education campaign.
+    website_link: https://pamelayoungjacobs.com
+    sources_link: https://github.com/csutherl/jacobs-for-boe
+  - title: Waccamaw Siouan Tribe
+    image: /images/ws.org.png
+    description: I've been maintaining the website for the Waccamaw Siouan Tribe since mid 2018. It's built with the GoDaddy Website Builder tool.
+    website_link: https://waccamaw-siouan.org
+  - title: Triangle Native Ameican Society
+    image: /images/tnas.org.png
+    description: The website for the Triangle Native American Society was built with Wordpress.
+    website_link: https://trianglenative.org
+  - title: NC Native Environment
+    image: /images/ne.w.com.png
+    description: The Native Environment was built using Weebly's site building tools, I recently did some work to improve the look and feel and made some SEO improvements as well.
+    website_link: https://nativeenvironment.weebly.com
