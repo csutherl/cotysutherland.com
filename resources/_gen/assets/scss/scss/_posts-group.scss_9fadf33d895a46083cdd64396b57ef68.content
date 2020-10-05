@@ -1,0 +1,31 @@
+.posts-group {
+  display: flex;
+  margin-bottom: 1.9em;
+  line-height: normal; }
+  .posts-group .post-year {
+    padding-top: 6px;
+    margin-right: 1.8em;
+    font-size: 1.6em;
+    opacity: .6; }
+    .posts-group .post-year:hover {
+      text-decoration: underline;
+      cursor: pointer; }
+  .posts-group .posts-list {
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  .posts-group .post-item {
+    border-bottom: 1px #7d828a dashed; }
+    .posts-group .post-item a {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 12px 0;
+      text-decoration: none; }
+  .posts-group .post-day {
+    flex-shrink: 0;
+    margin-left: 1em;
+    opacity: .6; }
+
+/*# sourceMappingURL=_posts-group.css.map */

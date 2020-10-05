@@ -53,6 +53,9 @@ googleAnalytics = "UA-100325743-1"
     # Custom CSS
     custom_css = []
 
+    # Custom SCSS
+    custom_scss = ["scss/_posts-group.scss"]
+
     # Custom JS
     custom_js = []
 
