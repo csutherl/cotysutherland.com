@@ -1,0 +1,12 @@
+<div class="categories">
+
+  <i class="fa-solid fa-folder" aria-hidden="true"></i>
+  {{ range . }}
+    {{ $cat := . }}
+    {{ with site.GetPage (printf "/categories/%s" (urlize $cat)) }}
+      <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+    {{ else }}
+      {{ $cat }}
+    {{ end }}
+  {{ end }}
+</div>

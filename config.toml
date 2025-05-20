@@ -20,8 +20,7 @@ googleAnalytics = "UA-100325743-1"
     author = "Coty Sutherland"
     description = "Coty Sutherland's personal website"
     keywords = "blog,developer,personal"
-    info = "Software Engineer/Engineering Manager"
-    #avatarurl = "images/avatar.jpg"
+    info = "Software Engineering Manager"
     gravatar = "sutherland.coty@gmail.com"
 #    footercontent = "Enter a text here."
 
@@ -46,9 +45,6 @@ googleAnalytics = "UA-100325743-1"
 
     # Series see also post count
     maxSeeAlsoItems = 5
-
-    # Enable Twemoji
-    enableTwemoji = true
 
     # Custom CSS
     custom_css = []

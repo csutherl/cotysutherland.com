@@ -1,14 +1,12 @@
 +++
 author = "Coty Sutherland"
-categories = ["Indigenous Issue Synopses"]
-date = 2019-06-08T05:26:00Z
-description = ""
-draft = false
-slug = "2019-international-year-of-indigenous-languages-and-a-beatles-cover-song"
 title = "2019, International Year of Indigenous Languages and a Beatles Cover Song"
-
+date = "2019-06-08"
+description = "Reflections on Indigenous language preservation through a Beatles cover."
+categories = ["Indigenous Issue Synopses"]
+draft = false
+slug = "2019-international-year-of-indigenous-languages"
 +++
-
 
 January of this year started the International Year of Indigenous Languages (IYIL). This project started back in 2016 when the [United Nations General Assembly proclaimed that 2019 would be the International Year of Indigenous Languages](https://www.un.org/development/desa/dspd/2019/01/2019-international-year-of-indigenous-languages/). The project's [website](https://en.iyil2019.org/) has a lot of good information, so please check it out!
 

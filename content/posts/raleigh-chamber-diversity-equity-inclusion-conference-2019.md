@@ -116,20 +116,10 @@ Creating economic mobility of craftsmen.
 
 Low supply and high demand is causing high prices of homes.
 
-<figure>
-  <div>
-    <div>
-      <div><img src="/images/MVIMG_20190809_131313.jpg" width="4032" height="3024"/></div>
-      <div><img src="/images/MVIMG_20190809_132153.jpg" width="4032" height="3024"/></div>
-      <div><img src="/images/MVIMG_20190809_132410.jpg" width="4032" height="3024"/></div>
-    </div>    <div>      <div><img src="/images/IMG_20190809_131545.jpg" width="4032" height="3024"/></div>
-      <div><img src="/images/IMG_20190809_132955.jpg" width="4032" height="3024"/></div>
-    </div>
-  </div>
-  <figcaption>
-    A few photos of slides I captured during the Lowes presentation.
-  </figcaption>
-</figure>
+{{< gallery
+    images="/images/MVIMG_20190809_131313.jpg, /images/MVIMG_20190809_132153.jpg, /images/MVIMG_20190809_132410.jpg, /images/IMG_20190809_131545.jpg, /images/IMG_20190809_132955.jpg"
+    caption="A few photos of slides I captured during the Lowes presentation."
+>}}
 
 By Lowes estimation, there will be three million skilled job openings by 2028. To solve these problems Lowe's has developed a track to the trades program and [Generation T workforce movement](https://www.wearegenerationt.com/). The We Are Generation T website partners with lots of community colleges to teach and uses job skills immersion to teach their students.
 
