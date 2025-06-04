@@ -1,0 +1,26 @@
+colorScheme = "slate"
+defaultAppearance = "dark"
+enableSearch = true
+mainSections = ["posts"]
+homepage.layout = "profile"
+
+article.showWordCount = true
+article.showSummary = true
+article.showReadingTime = true
+
+list.showSummary = true
+list.showWordCount = true
+list.showReadingTime = true
+
+[footer]
+showAppearanceSwitcher = true
+
+[author]
+  name = "Coty Sutherland"
+  image = "img/profile.jpeg"
+  bio = "Software engineering manager, open source contributor, and community-minded technologist focused on developer experience, team growth, and applied AI."
+  links = [
+    { icon = "github", name = "GitHub", url = "https://github.com/csutherl" },
+    { icon = "linkedin", name = "LinkedIn", url = "https://linkedin.com/in/cotysutherland" },
+    { icon = "twitter", name = "Twitter", url = "https://twitter.com/cotysutherland" }
+  ]

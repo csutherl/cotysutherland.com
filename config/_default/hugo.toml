@@ -1,0 +1,17 @@
+baseURL = "https://cotysutherland.com/"
+languageCode = "en-us"
+title = "Coty Sutherland"
+theme = "congo"
+pagination.pagerSize = 10
+
+summaryLength = 0
+
+copyright = "All content is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)"
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

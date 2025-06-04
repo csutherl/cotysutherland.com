@@ -1,0 +1,78 @@
+{{ $imagesParam := .Get "images" }}
+{{ $caption := .Get "caption" }}
+{{ $images := split $imagesParam "," }}
+
+<div class="gallery-container">
+  <div class="gallery-frame">
+    {{ range $index, $img := $images }}
+      {{ $src := $img | trim " " | safeURL }}
+      <img
+        src="{{ $src }}"
+        class="gallery-image"
+        style="{{ if ne $index 0 }}display:none;{{ end }}"
+        data-index="{{ $index }}"
+        loading="lazy"
+      />
+    {{ end }}
+
+    <button class="gallery-prev" onclick="galleryPrev(this)">⟨</button>
+    <button class="gallery-next" onclick="galleryNext(this)">⟩</button>
+
+    <div class="gallery-caption">{{ $caption }}</div>
+  </div>
+</div>
+
+<style>
+.gallery-container {
+  max-width: 100%;
+  position: relative;
+  margin: 1em auto;
+  text-align: center;
+}
+.gallery-frame {
+  position: relative;
+  display: inline-block;
+}
+.gallery-image {
+  max-width: 100%;
+  height: auto;
+}
+.gallery-prev,
+.gallery-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #0008;
+  color: white;
+  border: none;
+  padding: 0.5em;
+  cursor: pointer;
+  font-size: 1.5em;
+}
+.gallery-prev { left: 0.2em; }
+.gallery-next { right: 0.2em; }
+.gallery-caption {
+  margin-top: 0.5em;
+  font-style: italic;
+  color: #555;
+}
+</style>
+
+<script>
+function galleryNext(button) {
+  const frame = button.closest('.gallery-frame');
+  const images = frame.querySelectorAll('.gallery-image');
+  let current = Array.from(images).findIndex(img => img.style.display !== 'none');
+  images[current].style.display = 'none';
+  current = (current + 1) % images.length;
+  images[current].style.display = 'block';
+}
+function galleryPrev(button) {
+  const frame = button.closest('.gallery-frame');
+  const images = frame.querySelectorAll('.gallery-image');
+  let current = Array.from(images).findIndex(img => img.style.display !== 'none');
+  images[current].style.display = 'none';
+  current = (current - 1 + images.length) % images.length;
+  images[current].style.display = 'block';
+}
+</script>

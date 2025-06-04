@@ -1,0 +1,5 @@
+.idea
+exampleSite/public/
+exampleSite/resources/
+*.lock
+public

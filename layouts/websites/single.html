@@ -1,0 +1,38 @@
+{{ define "main" }}
+<style>
+a.btn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #e7e7e7;
+  color: black;
+}
+</style>
+
+<article class="max-w-full prose dark:prose-invert">
+  <header class="mb-8">
+    <h1 class="text-3xl font-bold">{{ .Title }}</h1>
+  </header>
+  
+  {{ range $i, $el := .Site.Data.websites }}
+  <div class="flex items-stretch mb-8">
+    {{ if mod $i 2 }}
+    <div class="flex-1 pr-8">
+      {{ partial "projects-desc.html" . }}
+    </div>
+    <div class="flex-1">
+      <img src="{{ .image }}" class="w-full h-auto"/>
+    </div>
+    {{ else }}
+    <div class="flex-1">
+      <img src="{{ .image }}" class="w-full h-auto"/>
+    </div>
+    <div class="flex-1 pl-8">
+      {{ partial "projects-desc.html" . }}
+    </div>
+    {{ end }}
+  </div>
+  {{ end }}
+</article>
+{{ end }}

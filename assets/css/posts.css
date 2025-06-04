@@ -1,0 +1,73 @@
+:root {
+  --link-color: #1a0dab; /* default for light theme */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --link-color: #ffffff;
+  }
+}
+
+.post-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border-color, #444);
+}
+
+.post-card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--link-color, #fff);
+  text-decoration: none;
+  margin-bottom: 0.25rem;
+}
+
+.post-card-title:hover {
+  text-decoration: underline;
+}
+.post-meta {
+  font-size: 0.9rem;
+  color: var(--text-muted, #aaa);
+  margin-bottom: 0.5rem;
+}
+
+.post-summary {
+  font-size: 1rem;
+  color: var(--text-color, #ddd);
+  line-height: 1.5;
+  margin: 0;
+  max-width: 60ch;
+}
+
+@media (min-width: 600px) {
+  .post-card {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .post-card-content {
+    flex: 1;
+    padding-left: 1rem;
+  }
+
+  .post-card-title {
+    font-size: 1.5rem;
+  }
+
+  .post-summary {
+    max-width: 100%;
+  }
+}
+
+.posts-list a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.posts-list a:hover {
+  color: #1a73e8; /* A Google-style blue — clean and readable */
+  text-decoration: underline;
+}
