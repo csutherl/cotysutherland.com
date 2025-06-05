@@ -9,3 +9,9 @@
   name = "Posts"
   url = "/posts/"
   weight = 20
+
+[[main]]
+  identifier = "projects"
+  name = "Projects"
+  url = "/projects/"
+  weight = 20
