@@ -2,25 +2,58 @@ colorScheme = "slate"
 defaultAppearance = "dark"
 enableSearch = true
 mainSections = ["posts"]
-homepage.layout = "profile"
-
-article.showWordCount = true
-article.showSummary = true
-article.showReadingTime = true
-
-list.showSummary = true
-list.showWordCount = true
-list.showReadingTime = true
-
-[footer]
-showAppearanceSwitcher = true
 
 [author]
-  name = "Coty Sutherland"
-  image = "img/profile.jpeg"
-  bio = "Software engineering manager, open source contributor, and community-minded technologist focused on developer experience, team growth, and applied AI."
-  links = [
-    { icon = "github", name = "GitHub", url = "https://github.com/csutherl" },
-    { icon = "linkedin", name = "LinkedIn", url = "https://linkedin.com/in/cotysutherland" },
-    { icon = "twitter", name = "Twitter", url = "https://twitter.com/cotysutherland" }
-  ]
+name = "Coty Sutherland"
+image = "img/profile.jpeg"
+headline = "People-First Leader | Open Source Advocate | Engineering with Purpose"
+bio = "Coty Sutherland is a senior software engineering leader with more than a decade of experience at Red Hat. He contributes to open source, mentors engineering teams, and supports Indigenous-led nonprofits. Coty is now exploring AI, personal growth tools, and practical ways to help others thrive in tech and life."
+links = [
+  { github = "https://github.com/csutherl" },
+  { linkedin = "https://linkedin.com/in/cotysutherland" },
+  { twitter = "https://twitter.com/cotysutherland" }
+]
+
+[footer]
+showCopyright = true
+showThemeAttribution = true
+showAppearanceSwitcher = true
+showScrollToTop = true
+
+[homepage]
+layout = "profile" # valid options: page, profile, custom
+showRecent = true
+recentLimit = 5
+
+[article]
+showDate = true
+showDateUpdated = false
+showAuthor = true
+showBreadcrumbs = true
+showDraftLabel = true
+showEdit = true
+editURL = "https://github.com/csutherl/cotysutherland.com/blob/main/content/"
+editAppendPath = true
+showHeadingAnchors = true
+showPagination = true
+invertPagination = false
+showReadingTime = true
+showTableOfContents = true
+showTaxonomies = true
+showWordCount = true
+showComments = false
+sharingLinks = []
+
+[list]
+showBreadcrumbs = true
+showSummary = true
+showTableOfContents = true
+showTaxonomies = false
+groupByYear = true
+paginationWidth = 1
+
+[sitemap]
+excludedKinds = ["taxonomy", "term"]
+
+[taxonomy]
+showTermCount = true

@@ -3,24 +3,30 @@ title = "About Me"
 slug = "about"
 type = "page"
 layout = "single"
+showDate = false
+showReadingTime = false
+showWordCount = false
+showEdit = false
 +++
 
 ### Who Am I?
 
-Hi, I'm Coty! I am a father of three boys (all under three years old), a member of the [Waccamaw Siouan Tribe of North Carolina](https://waccamaw-siouan.org/), and an Associate Software Engineering Manager currently employed by [Red Hat, Inc](https://www.redhat.com/). Since I'm still new to being a People Manager I have continued to be very active in my previous individual contributor (IC) role as Senior Software Engineer while I'm transitioning into the new role.
+Hi, I’m Coty and I'm glad that you've decided to spend some time reading some of my thoughts! I'm a father of four energetic kids, a proud member of the [Waccamaw Siouan Tribe of North Carolina](https://waccamaw-siouan.org/) and dedicated contributorto the tribe's [STEM Studio Program](https://stemstudio.waccamaw-siouan.org), and a Senior Software Engineering Manager at [Red Hat](https://www.redhat.com). After more than five years in people leadership, I still stay hands-on with code and open-source work because it keeps me close to the craft I love.
 
-Volunteering my time and skills to American Indian tribes and nonprofit organizations are a couple of my passions. I sit on two different American Indian organization boards; I serve as the Vice President of the [Triangle Native American Society (TNAS)](https://trianglenative.org/) and I serve as the Secretary of [Natives in Tech](https://nativesintech.org). I also volunteer my time and skills to my tribe and TNAS as Webmaster, Facebook business page admin, and G Suite admin (mostly focused on managing gmail accounts).
+I previously served on the boards of the [Triangle Native American Society](https://trianglenative.org) (Vice President) and Natives in Tech (Secretary). I also founded and chaired Red Hat’s Native + Indigenous Employee Resource Group for more than six years before stepping aside to let new leadership grow. Supporting Indigenous voices in tech remains central to my purpose.
 
-My partner and I live in central North Carolina along with our three sons and several pets.
+My partner and I make our home in North Carolina with our four kids and a collection of pets. Life is loud, busy, and wonderfully full.
 
-### What Do I Do For Work?
+### What Do I Do for Work?
 
-As an engineer, the main project that I contribute to is [Apache Tomcat](https://tomcat.apache.org/) where I’m a committer and member of the Project Management Committee (PMC) and Security Team. I maintain the [Fedora](fedoraproject.org/) and Red Hat Enterprise Linux Tomcat packages as well. I also contribute to [Apache HTTP Server (httpd)](https://httpd.apache.org/) and [OpenSSL](https://www.openssl.org/), but not as often. If you're interested in seeing more about my software engineering work, check out my [Projects](/projects) page!
+I’m a longtime contributor to Apache Tomcat as a committer, PMC member, and part of the Security Team, and I maintain both the Fedora Project and Red Hat Enterprise Linux tomcat (and a few other) packages. I still pitch in on related projects like Apache HTTP Server and OpenSSL when time allows.
 
-In my role as a People Manager I support a team of engineers that work on a productized version of Apache Tomcat, which includes several different libraries and components.
-
-Last but not least, I serve as the Chairperson of the Native + Indigenous [Diversity and Inclusion Community](https://www.redhat.com/en/about/our-culture/diversity-and-inclusion) at work (D+I Communities are our version of Employee Resource Groups). I was a co-founder of the group back in 2018 and working with the leadership team of the community is one of the reasons why I was interested in trying out a People Manager role.
+At Red Hat I lead a team delivering the productized version of Apache Tomcat and several companion libraries bundled together. My leadership style is people-first: clear expectations, continuous coaching, and plenty of space for engineers to innovateand grow.
 
 ### What Do I Do When I'm Not Working?
 
-Usually when I'm not working I'm entertaining the kids, but sometimes (when they're all in bed or napping) I find myself with a bit of free time. Most recently I learned to use [Hugo](https://gohugo.io/) and developed this site :) I enjoy making things with my hands so I try and fit in some woodworking when I can, which is usually in support of my partner's business, [Simply Sutherland Studios](https://simplysutherlandstudios.com).
+These days my personal-time sandbox is AI experimentation, from local LLM tinkering to business and workflow automations that make tech more inclusive and productive. I also partner with my wife on her small business, [Simply Sutherland Studios](http://simplysutherlandstudios.com/), lending a hand with tech, strategy, bookkeeping, and the occasional late-night brainstorming session.
+
+And, of course, most evenings are happily spent chasing four kids around the house, building wild LEGO creations, talking about Minecraft, or making up our own bedtime stories.
+
+Life is good.

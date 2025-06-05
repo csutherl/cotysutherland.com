@@ -3,40 +3,62 @@ title = "Open Source Projects and Contributions"
 slug = "projects"
 layout = "single"
 type = "page"
+showDate = false
+showReadingTime = false
+showWordCount = false
+showEdit = false
+showAuthor = false
 +++
 
-Most of the projects that I work on are Open Source projects. I'm really lucky to have a job that allows me to work within those communities as well. I've listed a handful of the projects I most actively work on below. In addition to those, I've also contributed to several other projects like [JBoss Web](https://jbossweb.jboss.org), [mod_cluster](https://modcluster.io), [Apache HTTP Server](https://httpd.apache.org) (aka apache or httpd), and [OpenSSL](https://openssl.org).
+# Projects
 
-I also consider myself a hobbyist web developer and have a few websites that I've created and/or maintain that you can find on the [Websites](/websites) page.
+Most of my work centers around **open source projects** and I’m fortunate to have a role that lets me contribute directly to those communities as part of my day job. Below are a few of the projects I actively work on or maintain. I’ve also contributed to others over the years, including **JBoss Web**, **mod_cluster**, **Apache HTTP Server (httpd)**, and **OpenSSL**.
 
-##### Apache Tomcat
+I also enjoy being a webmaster as a hobby and maintain a few sites for nonprofit organizations.
 
-Apache Tomcat is an open source implementation of the Java Servlet, JavaServer Pages, Java Expression Language, and Java WebSocket specifications. I have been a committer on the project since 2016, and on the Project Management Committee since 2017. I am a member of the Tomcat Security team as well.
+---
 
-*Lanuages:* Java and C (tomcat-native and mod_jk components)
+## Apache Tomcat
 
-{{< project-links "https://tomcat.apache.org" "https://github.com/apache/tomcat" >}}
+[![Apache Tomcat](https://tomcat.apache.org/res/images/tomcat.png)](https://tomcat.apache.org)
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://ci.apache.org/projects/tomcat.html)
+[![GitHub Stars](https://img.shields.io/github/stars/apache/tomcat?style=social)](https://github.com/apache/tomcat)
+[![Source on GitHub](https://img.shields.io/badge/source-github-blue)](https://github.com/apache/tomcat)
 
-##### Embedded Tomcat Quickstarts
+[Apache Tomcat](https://tomcat.apache.org) is an open source implementation of the Java Servlet, JavaServer Pages, Java Expression Language, and Java WebSocket specifications. I’ve been a **committer since 2016**, a **Project Management Committee (PMC) member since 2017**, and am part of the **Tomcat Security Team**.
 
-Use of Embedded Tomcat has grown quite in recent years, but our documentation doesn't have a lot of examples of how to use it. I created this project as a place to store "quickstarts" for Embedded Tomcat for users to have a quick and easy to reference to see how to use it. In the project I included a vanilla tomcat implementation and a Spring Boot implementation of the examples.
+- **Languages:** Java, C (`tomcat-native`, `mod_jk`)
+- 🔗 [Visit Project](https://tomcat.apache.org)
 
-*Lanuages:* Java
+---
 
-{{< project-links "https://github.com/web-servers/tomcat-embedded-quickstarts" >}}
+## Embedded Tomcat Quickstarts
 
-##### Vault Extension for Apache Tomcat
+[![GitHub Repo](https://img.shields.io/github/stars/web-servers/tomcat-embedded-quickstarts?style=social)](https://github.com/web-servers/tomcat-embedded-quickstarts)
+[![Source on GitHub](https://img.shields.io/badge/source-github-blue)](https://github.com/web-servers/tomcat-embedded-quickstarts)
 
-The tomcat-vault library is a PicketLink vault extension for Apache Tomcat. It allows you to place sensitive information, such as passwords, inside of a vault instead of the Tomcat configuration files. This is one of the components that is used by the product I maintain and so I was pretty active fixing things in this project.
+As the use of **Embedded Tomcat** has grown, I noticed a gap in the available reference material. I created this project to offer quickstart examples showing how to use Embedded Tomcat — including both a **vanilla** implementation and a **Spring Boot** version.
 
-*Lanuages:* Java
+- **Languages:** Java
 
-{{< project-links "https://github.com/web-servers/tomcat-vault" >}}
+---
 
-#### Fedora Package Maintainer
+## Vault Extension for Apache Tomcat
 
-I've been a package maintainer for the tomcat package on Fedora since 2015, and a co-maintainer for the tomcat-native package since 2016. These packages are wrappers for the Apache Tomcat releases with a few additional things (like systemd service units) to make them accessible by system administrators through the operating system's package manager. 
+[![GitHub Repo](https://img.shields.io/github/stars/web-servers/tomcat-vault?style=social)](https://github.com/web-servers/tomcat-vault)
+[![Source on GitHub](https://img.shields.io/badge/source-github-blue)](https://github.com/web-servers/tomcat-vault)
 
-*Languages:* RPM and bash
+The `tomcat-vault` library is a **PicketLink Vault** extension that lets you store sensitive information (like passwords) outside of Tomcat configuration files. This component is used in the product I support at Red Hat, so I’ve contributed actively to maintaining and improving it.
 
-{{< project-links "https://src.fedoraproject.org/rpms/tomcat" >}}
+- **Languages:** Java
+
+---
+
+## Fedora Package Maintainer
+
+[![Fedora](https://upload.wikimedia.org/wikipedia/commons/3/3f/Fedora_logo.svg)](https://src.fedoraproject.org/rpms/tomcat)
+[![GitHub Repo](https://img.shields.io/badge/source-fedora%20pagure-blue)](https://src.fedoraproject.org/rpms/tomcat)
+
+I’ve maintained the **Tomcat package for Fedora** since 2015 and co-maintain the **tomcat-native** package as well. These packages adapt upstream releases for system administrators by adding packaging logic, `systemd` integration, and platform-specific patches.
+
+- **Languages:** RPM spec, Bash
