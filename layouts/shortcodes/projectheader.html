@@ -1,0 +1,40 @@
+{{ $title := .Get "title" }}
+{{ $logo := .Get "logo" }}
+{{ $hasLogo := $logo | default "" | ne "" }}
+{{ $repo := .Get "repo" }}
+{{ $repoUrl := .Get "repoUrl" }}
+{{ if not $repoUrl }}
+  {{ $repoUrl = printf "https://github.com/%s" (.Get "repo") }}
+{{ end }}
+{{ $build := .Get "build" }}
+{{ $showStars := or (.Get "stars") "true" | lower | eq "true" }}
+{{ $showBuild := or (.Get "buildstatus") "true" | lower | eq "true" }}
+{{ $isGitHub := in $repoUrl "github.com" }}
+
+<div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.25rem;">
+  {{ if $hasLogo }}
+    <img src="{{ $logo }}" alt="{{ $title }} logo" style="height: 56px; margin: 0;">
+  {{ end }}
+  <h1 style="margin: 0; font-size: 2rem;">{{ $title }}</h1>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.5rem;">
+  {{ if $showBuild }}
+    <img src="https://img.shields.io/badge/build-passing-brightgreen" alt="Build"
+         style="cursor: pointer;" onclick="window.open('{{ $build }}','_blank')">
+  {{ end }}
+
+  {{ if and $showStars $isGitHub }}
+    <img src="https://img.shields.io/github/stars/{{ $repo }}?style=social" alt="Stars"
+         style="cursor: pointer;" onclick="window.open('https://github.com/{{ $repo }}/stargazers','_blank')">
+  {{ end }}
+
+  {{ if $isGitHub }}
+    <img src="https://img.shields.io/badge/source-GitHub-blue" alt="Source on GitHub"
+       style="cursor: pointer;" onclick="window.open('{{ $repoUrl }}','_blank')">
+  {{ else }}
+    <img src="https://img.shields.io/badge/source-pagure-blue" alt="Source on Pagure"
+       style="cursor: pointer;" onclick="window.open('{{ $repoUrl }}','_blank')">
+  {{ end }}
+</div>
+

@@ -18,47 +18,43 @@ I also enjoy being a webmaster as a hobby and maintain a few sites for nonprofit
 
 ---
 
-## Apache Tomcat
+{{< projectheader
+  title="Fedora Project Maintainer"
+  logo="https://upload.wikimedia.org/wikipedia/commons/3/3f/Fedora_logo.svg"
+  repoUrl="https://src.fedoraproject.org/rpms/tomcat"
+  buildstatus="false"
+  stars="false"
+>}}
 
-[![Apache Tomcat](https://tomcat.apache.org/res/images/tomcat.png)](https://tomcat.apache.org)
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://ci.apache.org/projects/tomcat.html)
-[![GitHub Stars](https://img.shields.io/github/stars/apache/tomcat?style=social)](https://github.com/apache/tomcat)
-[![Source on GitHub](https://img.shields.io/badge/source-github-blue)](https://github.com/apache/tomcat)
+I’ve maintained the **Tomcat package for Fedora** since 2015 and co-maintain the **tomcat-native** package as well. These packages adapt upstream releases for system administrators by adding packaging logic, systemd integration, and platform-specific patches.
 
-[Apache Tomcat](https://tomcat.apache.org) is an open source implementation of the Java Servlet, JavaServer Pages, Java Expression Language, and Java WebSocket specifications. I’ve been a **committer since 2016**, a **Project Management Committee (PMC) member since 2017**, and am part of the **Tomcat Security Team**.
-
-- **Languages:** Java, C (`tomcat-native`, `mod_jk`)
-- 🔗 [Visit Project](https://tomcat.apache.org)
+- **Languages:** RPM spec, Bash, Java
 
 ---
 
-## Embedded Tomcat Quickstarts
+{{< projectheader
+  title="Apache Tomcat"
+  logo="https://tomcat.apache.org/res/images/tomcat.png"
+  repo="apache/tomcat"
+  build="https://img.shields.io/github/actions/workflow/status/apache/tomcat/ci.yml?branch=main"
+>}}
 
-[![GitHub Repo](https://img.shields.io/github/stars/web-servers/tomcat-embedded-quickstarts?style=social)](https://github.com/web-servers/tomcat-embedded-quickstarts)
-[![Source on GitHub](https://img.shields.io/badge/source-github-blue)](https://github.com/web-servers/tomcat-embedded-quickstarts)
 
-As the use of **Embedded Tomcat** has grown, I noticed a gap in the available reference material. I created this project to offer quickstart examples showing how to use Embedded Tomcat — including both a **vanilla** implementation and a **Spring Boot** version.
+[Apache Tomcat](https://tomcat.apache.org) is an open source implementation of the Java Servlet, JavaServer Pages, Java Expression Language, and Java WebSocket specifications. I’ve been a committer since **2016**, a **Project Management Committee (PMC)** member since **2017**, and am part of the **Tomcat Security Team**.
+
+- **Languages**: Java, C (tomcat-native, mod_jk)
+- [🔗 Visit Project Website](https://tomcat.apache.org/)
+
+---
+
+{{< projectheader
+  title="Vault Extension for Apache Tomcat"
+  repo="web-servers/tomcat-vault"
+  buildstats="false"
+>}}
+
+The Vault Extension for Apache Tomcat library is a **PicketLink Vault** extension that lets you store sensitive information (like passwords) outside of Tomcat configuration files. This component is used in the product I support at Red Hat, so I’ve contributed actively to maintaining and improving it.
 
 - **Languages:** Java
 
 ---
-
-## Vault Extension for Apache Tomcat
-
-[![GitHub Repo](https://img.shields.io/github/stars/web-servers/tomcat-vault?style=social)](https://github.com/web-servers/tomcat-vault)
-[![Source on GitHub](https://img.shields.io/badge/source-github-blue)](https://github.com/web-servers/tomcat-vault)
-
-The `tomcat-vault` library is a **PicketLink Vault** extension that lets you store sensitive information (like passwords) outside of Tomcat configuration files. This component is used in the product I support at Red Hat, so I’ve contributed actively to maintaining and improving it.
-
-- **Languages:** Java
-
----
-
-## Fedora Package Maintainer
-
-[![Fedora](https://upload.wikimedia.org/wikipedia/commons/3/3f/Fedora_logo.svg)](https://src.fedoraproject.org/rpms/tomcat)
-[![GitHub Repo](https://img.shields.io/badge/source-fedora%20pagure-blue)](https://src.fedoraproject.org/rpms/tomcat)
-
-I’ve maintained the **Tomcat package for Fedora** since 2015 and co-maintain the **tomcat-native** package as well. These packages adapt upstream releases for system administrators by adding packaging logic, `systemd` integration, and platform-specific patches.
-
-- **Languages:** RPM spec, Bash
