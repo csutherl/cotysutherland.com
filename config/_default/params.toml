@@ -57,3 +57,7 @@ excludedKinds = ["taxonomy", "term"]
 
 [taxonomy]
 showTermCount = true
+
+[umamiAnalytics]
+site = "b1005dad-7a36-4f16-aadd-617366441262"
+region = "us"
