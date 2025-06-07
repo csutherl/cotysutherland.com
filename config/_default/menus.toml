@@ -14,4 +14,10 @@
   identifier = "projects"
   name = "Projects"
   url = "/projects/"
-  weight = 20
+  weight = 30
+
+[[main]]
+  identifier = "cv"
+  name = "CV"
+  url = "/cv/"
+  weight = 40
