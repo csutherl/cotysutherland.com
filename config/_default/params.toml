@@ -9,9 +9,11 @@ image = "img/profile.jpeg"
 headline = "People-First Leader | Open Source Advocate | Engineering with Purpose"
 bio = "Coty Sutherland is a senior software engineering leader with more than a decade of experience at Red Hat. He contributes to open source, mentors engineering teams, and supports Indigenous-led nonprofits. Coty is now exploring AI, personal growth tools, and practical ways to help others thrive in tech and life."
 links = [
-  { github = "https://github.com/csutherl" },
   { linkedin = "https://linkedin.com/in/cotysutherland" },
-  { twitter = "https://twitter.com/cotysutherland" }
+  { twitter = "https://twitter.com/cotysutherland" },
+  { bluesky = "https://bsky.app/profile/cotysutherland.bsky.social" },
+  { github = "https://github.com/csutherl" },
+  { gitlab = "https://gitlab.com/csutherl" }
 ]
 
 [footer]
